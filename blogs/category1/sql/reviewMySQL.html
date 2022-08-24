@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL基础 | yuiyake</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/g9.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="你好呀">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.18a1695c.css" as="style"><link rel="preload" href="/assets/js/app.617e32b2.js" as="script"><link rel="preload" href="/assets/js/3.f97a72c8.js" as="script"><link rel="preload" href="/assets/js/1.23c60b83.js" as="script"><link rel="preload" href="/assets/js/55.6dd5b2d8.js" as="script"><link rel="prefetch" href="/assets/js/10.c60f11b8.js"><link rel="prefetch" href="/assets/js/11.d99a1e77.js"><link rel="prefetch" href="/assets/js/12.486d5b9f.js"><link rel="prefetch" href="/assets/js/13.bcdbc63d.js"><link rel="prefetch" href="/assets/js/14.f5d3e58d.js"><link rel="prefetch" href="/assets/js/15.859f649e.js"><link rel="prefetch" href="/assets/js/16.7636f725.js"><link rel="prefetch" href="/assets/js/17.459b38c8.js"><link rel="prefetch" href="/assets/js/18.97f361cc.js"><link rel="prefetch" href="/assets/js/19.c7139f70.js"><link rel="prefetch" href="/assets/js/20.b4ac0b8a.js"><link rel="prefetch" href="/assets/js/21.2ce33425.js"><link rel="prefetch" href="/assets/js/22.f6232f77.js"><link rel="prefetch" href="/assets/js/23.afa461f2.js"><link rel="prefetch" href="/assets/js/24.8913772b.js"><link rel="prefetch" href="/assets/js/25.1ea28d3e.js"><link rel="prefetch" href="/assets/js/26.262aa695.js"><link rel="prefetch" href="/assets/js/27.72d9efeb.js"><link rel="prefetch" href="/assets/js/28.894dc616.js"><link rel="prefetch" href="/assets/js/29.601e3597.js"><link rel="prefetch" href="/assets/js/30.88d5e5a1.js"><link rel="prefetch" href="/assets/js/31.8d409de6.js"><link rel="prefetch" href="/assets/js/32.c3b1cee6.js"><link rel="prefetch" href="/assets/js/33.009a16f4.js"><link rel="prefetch" href="/assets/js/34.7ea0bf1e.js"><link rel="prefetch" href="/assets/js/35.280b5bb7.js"><link rel="prefetch" href="/assets/js/36.7116c145.js"><link rel="prefetch" href="/assets/js/37.58d1a8fe.js"><link rel="prefetch" href="/assets/js/38.d405d1e1.js"><link rel="prefetch" href="/assets/js/39.680d9dd1.js"><link rel="prefetch" href="/assets/js/4.018ff8c0.js"><link rel="prefetch" href="/assets/js/40.c513d39b.js"><link rel="prefetch" href="/assets/js/41.f018a7e8.js"><link rel="prefetch" href="/assets/js/42.a18391d6.js"><link rel="prefetch" href="/assets/js/43.cf133721.js"><link rel="prefetch" href="/assets/js/44.3d9615d1.js"><link rel="prefetch" href="/assets/js/45.8e171438.js"><link rel="prefetch" href="/assets/js/46.992a34b6.js"><link rel="prefetch" href="/assets/js/47.180368ee.js"><link rel="prefetch" href="/assets/js/48.a3adc500.js"><link rel="prefetch" href="/assets/js/49.c95c9ddf.js"><link rel="prefetch" href="/assets/js/5.7008f02b.js"><link rel="prefetch" href="/assets/js/50.47967b33.js"><link rel="prefetch" href="/assets/js/51.36ee7272.js"><link rel="prefetch" href="/assets/js/52.3eaaef6c.js"><link rel="prefetch" href="/assets/js/53.bd54a45d.js"><link rel="prefetch" href="/assets/js/54.8624e8c6.js"><link rel="prefetch" href="/assets/js/56.2e69bb95.js"><link rel="prefetch" href="/assets/js/57.445f6e0d.js"><link rel="prefetch" href="/assets/js/58.5467f33b.js"><link rel="prefetch" href="/assets/js/59.b79494c9.js"><link rel="prefetch" href="/assets/js/6.0f1045c3.js"><link rel="prefetch" href="/assets/js/60.a7f5b6cb.js"><link rel="prefetch" href="/assets/js/61.1dae8ab9.js"><link rel="prefetch" href="/assets/js/62.89cb7280.js"><link rel="prefetch" href="/assets/js/63.7c4da50a.js"><link rel="prefetch" href="/assets/js/64.77bb5952.js"><link rel="prefetch" href="/assets/js/65.8a128aff.js"><link rel="prefetch" href="/assets/js/66.0c0fbf6f.js"><link rel="prefetch" href="/assets/js/67.9463c779.js"><link rel="prefetch" href="/assets/js/68.36b5c7ef.js"><link rel="prefetch" href="/assets/js/69.7b114b5d.js"><link rel="prefetch" href="/assets/js/7.7349b289.js"><link rel="prefetch" href="/assets/js/8.a52e95ed.js"><link rel="prefetch" href="/assets/js/9.6462b371.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.18a1695c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>yuiyake</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>你好呀</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>yuiyake</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">yuiyake</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/interview/" class="nav-link"><i class="undefined"></i>
+  面试相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计组/" class="nav-link"><i class="undefined"></i>
+  计组
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计网/" class="nav-link"><i class="undefined"></i>
+  计网
+</a></li><li class="dropdown-item"><!----> <a href="/categories/操作系统/" class="nav-link"><i class="undefined"></i>
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javaee/" class="nav-link"><i class="undefined"></i>
+  javaee
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/剑指offer/" class="nav-link"><i class="undefined"></i>
+  剑指offer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件测试/" class="nav-link"><i class="undefined"></i>
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/three/" class="nav-link"><i class="undefined"></i>
+  three
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件设计/" class="nav-link"><i class="undefined"></i>
+  软件设计
+</a></li><li class="dropdown-item"><!----> <a href="/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uml/" class="nav-link"><i class="undefined"></i>
+  uml
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Yuiyake" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/img/pic.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    yuiyake
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>58</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>1</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/interview/" class="nav-link"><i class="undefined"></i>
+  面试相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计组/" class="nav-link"><i class="undefined"></i>
+  计组
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计网/" class="nav-link"><i class="undefined"></i>
+  计网
+</a></li><li class="dropdown-item"><!----> <a href="/categories/操作系统/" class="nav-link"><i class="undefined"></i>
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javaee/" class="nav-link"><i class="undefined"></i>
+  javaee
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/剑指offer/" class="nav-link"><i class="undefined"></i>
+  剑指offer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件测试/" class="nav-link"><i class="undefined"></i>
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/three/" class="nav-link"><i class="undefined"></i>
+  three
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件设计/" class="nav-link"><i class="undefined"></i>
+  软件设计
+</a></li><li class="dropdown-item"><!----> <a href="/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uml/" class="nav-link"><i class="undefined"></i>
+  uml
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Yuiyake" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>MySQL基础</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>yuiyake</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">MySQL基础</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>yuiyake</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>6/14/2021</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="mysql期末复习"><a href="#mysql期末复习" class="header-anchor">#</a> MySQL期末复习</h1> <h2 id="数据库概述"><a href="#数据库概述" class="header-anchor">#</a> 数据库概述</h2> <h3 id="一、概念"><a href="#一、概念" class="header-anchor">#</a> 一、概念</h3> <ul><li>数据库是指长期存储在计算机内，有组织、可共享给的数据集合。</li></ul> <h3 id="数据库特点"><a href="#数据库特点" class="header-anchor">#</a> 数据库特点</h3> <ul><li>实现了数据独立性</li> <li>实现了数据共享</li> <li>减少数据冗余度</li> <li>实现了数据的集中控制</li> <li>维护了数据完整性</li> <li>提高数据可恢复性</li></ul> <h3 id="数据库类型"><a href="#数据库类型" class="header-anchor">#</a> 数据库类型</h3> <ul><li>层次模型</li> <li>网状模型</li> <li>关系模型，就是管理关系型数据库，并将数据组织为相关的行和列的系统</li></ul> <h3 id="数据模型"><a href="#数据模型" class="header-anchor">#</a> 数据模型</h3> <ul><li>概念：对现实世界数据的模拟和抽象</li> <li>类型：概念、逻辑、物理数据模型</li> <li>三要素： 数据结构、数据操作、完整性约束条件</li></ul> <h3 id="数据库系统-dbs-构成"><a href="#数据库系统-dbs-构成" class="header-anchor">#</a> 数据库系统（DBS）构成</h3> <ul><li>硬件</li> <li>软件</li> <li>数据库</li> <li>用户</li></ul> <h3 id="mysql优势"><a href="#mysql优势" class="header-anchor">#</a> MySQL优势</h3> <ol><li>速度快</li> <li>连接性和安全性</li> <li>可移植性</li> <li>支持SQL语言</li> <li>成本优势</li></ol> <h2 id="二、安装"><a href="#二、安装" class="header-anchor">#</a> 二、安装</h2> <h3 id="mysql服务的基本操作"><a href="#mysql服务的基本操作" class="header-anchor">#</a> MySQL服务的基本操作</h3> <ul><li>启动sql： cmd打开services.msc，在里面输入net start mysql</li> <li>停止sql： cmd打开services.msc，在里面输入net stop mysql</li> <li>登录sql： mysql -h localhost -u root -p</li> <li>退出sql：1. exit 2. quit 3. \q</li> <li><img src="/img/mysql-1.png" alt="foo"></li></ul> <h2 id="三、数据库基本操作"><a href="#三、数据库基本操作" class="header-anchor">#</a> 三、数据库基本操作</h2> <h3 id="数据库构成"><a href="#数据库构成" class="header-anchor">#</a> 数据库构成</h3> <ul><li>数据库可看作存储数据库对象的容器</li> <li>两类，系统数据库和用户数据库</li> <li>数据库对象是指存储、管理和使用数据的不同结构形式，主要包括表、索引、视图、
+缺省值、规则、触发器、存储过程和函数等</li></ul> <h3 id="数据库相关命令"><a href="#数据库相关命令" class="header-anchor">#</a> 数据库相关命令</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 创建</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> database_name<span class="token punctuation">;</span>  <span class="token comment">//database_name是数据库名字</span>
+
+<span class="token comment">// 查看</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">DATABASES</span>
+
+<span class="token comment">// 选择</span>
+<span class="token keyword">USE</span> database_name
+
+<span class="token comment">// 删除</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> db_shop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="四、存储引擎、数据类型和字符集"><a href="#四、存储引擎、数据类型和字符集" class="header-anchor">#</a> 四、存储引擎、数据类型和字符集</h2> <h3 id="存储引擎"><a href="#存储引擎" class="header-anchor">#</a> 存储引擎</h3> <ul><li>命令</li></ul> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">//查看默认引擎</span>
+<span class="token keyword">SHOW</span> VARIBALES <span class="token operator">LIKE</span> <span class="token string">'default_storage_engine'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 修改默认引擎</span>
+dafault_storage_engine <span class="token operator">=</span> MyISAM
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>常用的存储引擎及特点
+<ul><li>InnoDB：支持事务处理，支持外键，支持崩溃修复能力和并发控制。如果需要对事务的完整性要求比较高（比如银行），
+要求实现高并发控制（比如售票），数据频繁更新，那选择InnoDB有很大的优势。
+<br><br></li> <li>MyISAM：插入数据快，空间和内存使用比较低。如果表主要是用于插入新记录和读出记录，那么选择MyISAM能实现处理高
+效率。如果应用的完整性、并发性要求比较低，也可以使用
+<br><br></li> <li>MEMORY：所有的数据都在内存中，数据的处理速度快，但是安全性不高。如果需要很快的读写速度，对数据的安全性要求较低，
+数据更新不频繁，存活周期不长 可以选择MEMOEY。</li></ul></li></ul> <h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <ul><li>mysql提供的数据类型：数值类型，日期和时间类型，字符串类型，JSON类型
+<br><br></li> <li>数值类型， 包括整数类型(TINYINT,SMALLINT,MEDIUMINT,INT,BIGINT)，浮点数类型(FLOAT,DOUBLE)，定点数类型(DECIMAL)
+<ul><li>保证精度用decimal，占用字节M+2</li> <li>浮点数和定点数都可以用(M,D)定义。M是表示数值的位数（整+小），D为标度，就是小数点后的位数</li> <li>浮点数可定点数的区别：定点表示法运算直观，但数的表示范围较小，不同的数运算时要考虑比例因子的选取，以防止溢出。浮点表示法运算时可以不考虑溢出，
+但浮点运算，编程较难。要掌握定、浮点数的转换方法及浮点数规格化方法。
+<br><br></li></ul></li> <li>日期和时间类型，有TEAR,DATE,TIME,DATETIME,
+<ul><li>timestamp 和 datetime的区别是，datetime的数据是定值，timestamp的时间可以根据时区转换</li> <li>2017/10/10，2017.10.10，2017#10#10都会被转换成2017-10-10</li> <li>当数据为TIME类型的缩写值时，如果没有分隔符，MySQL会认为值的最右边两位表示秒，例如，’1010’会被转换成00:10:10；如果有分隔符，
+MySQL会认为值的最左边两位表示小时，例如，’10:10’会被转换为10:10:00。
+<br><br></li></ul></li> <li>字符串，有CHAR,VARCHAR,BINARY,VARBINARY,BLOB,TEXT,ENUM,SET等
+<ul><li>varchar和char：都储存较短的字符串，区别是存储方式不同。char长度是固定的，varchar创建时括号里的数字是允许的最大长度</li> <li>BINARY和VARBINARY：存储较短的二进制字符串，BINARY长度是固定的，当数据长度不足时，系统将自动在它的右边填充“\0”，直至指定长度。
+VARBINARY是可变的，不会补充\0.</li></ul></li></ul> <h3 id="字符集"><a href="#字符集" class="header-anchor">#</a> 字符集</h3> <ul><li>四个级别：服务器级，数据库级，数据表级，字段级</li> <li>常用的字符集：latin1，GBK和UTF-8</li> <li>字符集包括字符集和排序规则两个概念</li> <li>字符集的选择：
+<ul><li>如果数据库要处理不同地区的文字，就应选择Unicode字符集，在MySQL中，就是utf8。</li> <li>如果数据库只需要支持一般中文，并且数据量很大，性能要求很高，可以使用GBK字符集。</li> <li>如果数据库需要做大量运算，就应该选择定长字符集，如latin1和GBK等。</li></ul></li> <li>查看默认字符集（Latin1）</li></ul> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">SHOW</span> VARIABLES <span class="token operator">LIKE</span> <span class="token string">'character_set_server'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="五、数据表基本操作"><a href="#五、数据表基本操作" class="header-anchor">#</a> 五、数据表基本操作</h2> <h3 id="创建数据表"><a href="#创建数据表" class="header-anchor">#</a> 创建数据表</h3> <ul><li>基本语句</li></ul> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">USE</span> db_shop<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> goods<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><br><br></p> <ul><li>约束</li></ul> <ol><li>主键约束 PRIMARY KEY</li> <li>自增约束 AUTO_INCREMENT</li> <li>非空约束 NOT NULL</li> <li>唯一性约束 UNIQUE</li> <li>无符号约束 UNSIGNED</li> <li>默认约束 DEFAULT xxx</li> <li>外键约束</li></ol> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 用法像这样</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> goods<span class="token punctuation">(</span>
+id <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="表相关操作"><a href="#表相关操作" class="header-anchor">#</a> 表相关操作</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 查看表结构</span>
+<span class="token keyword">DESCRIBE</span> table_name<span class="token punctuation">;</span>
+
+<span class="token comment">// 查看建表语句</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> table_name \G<span class="token punctuation">;</span>
+
+<span class="token comment">// 修改表名</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> old_table <span class="token keyword">RENAME</span> new_table<span class="token punctuation">;</span>
+
+<span class="token comment">// 修改字段名</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name CHANGE old_name new_name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 修改字段类型</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName 
+<span class="token keyword">ALTER</span> <span class="token keyword">COLUMN</span> xxx <span class="token keyword">TYPE</span> 要修改成的类型<span class="token punctuation">;</span>
+
+<span class="token comment">// 修改数据类型</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName
+<span class="token keyword">ALTER</span> <span class="token keyword">COLUMN</span> fName nvarchar<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token boolean">null</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加字段名(在字段的最后一列)</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">ADD</span> xxx <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加字段名(在指定列后)</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">ADD</span> xxx <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">AFTER</span> xxx<span class="token punctuation">;</span>
+
+<span class="token comment">// 删除字段</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">DROP</span> xxx<span class="token punctuation">;</span>
+
+<span class="token comment">// 修改表顺序</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">MODIFY</span> xxx1 <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">AFTER</span><span class="token operator">/</span><span class="token keyword">FIRST</span> xxx2<span class="token punctuation">;</span>
+
+<span class="token comment">// 修改表的存储引擎</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">ENGINE</span><span class="token operator">=</span><span class="token keyword">InnoDB</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 删除表</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> xxx<span class="token punctuation">;</span>
+
+<span class="token comment">// 删除列</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName <span class="token keyword">DROP</span> <span class="token keyword">COLUMN</span> colName<span class="token punctuation">;</span> 
+
+<span class="token comment">// 增加列</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName <span class="token keyword">ADD</span> <span class="token keyword">COLUMN</span> colName<span class="token punctuation">;</span>
+
+<span class="token comment">// 删除表中主键</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName <span class="token keyword">DROP</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="六、数据的插入修改和删除"><a href="#六、数据的插入修改和删除" class="header-anchor">#</a> 六、数据的插入修改和删除</h2> <h3 id="插入数据"><a href="#插入数据" class="header-anchor">#</a> 插入数据</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> tableName<span class="token punctuation">(</span>id<span class="token punctuation">,</span> <span class="token keyword">type</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'书籍'</span><span class="token punctuation">,</span> <span class="token string">'西游记'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 将其他表中的数据插入到表中(table1是本表，table2是其它表)</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> table1<span class="token punctuation">(</span>id <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> parmary <span class="token keyword">key</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> id<span class="token punctuation">,</span> <span class="token keyword">type</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">FROM</span> table2<span class="token punctuation">;</span>
+
+<span class="token comment">// 设置自增键其实质</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> tableName
+<span class="token keyword">ADD</span> id <span class="token keyword">int</span> <span class="token keyword">identity</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="修改语句"><a href="#修改语句" class="header-anchor">#</a> 修改语句</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 修改所有</span>
+<span class="token keyword">UPDATE</span> <span class="token keyword">table</span> <span class="token keyword">SET</span> num<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">type</span><span class="token operator">=</span><span class="token string">'xxx'</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 修改指定</span>
+<span class="token keyword">UPDATE</span> <span class="token keyword">table</span> <span class="token keyword">SET</span> num<span class="token operator">=</span><span class="token number">0</span> <span class="token keyword">WHERE</span> <span class="token keyword">type</span><span class="token operator">=</span><span class="token string">'xxx'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="删除语句"><a href="#删除语句" class="header-anchor">#</a> 删除语句</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 删除所有</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> <span class="token keyword">table</span>；
+
+<span class="token comment">// 删除指定</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> <span class="token keyword">table</span> <span class="token keyword">WHERE</span> id<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 清除表（自增id，id不会重新开始）</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">TABLE</span> table_name<span class="token punctuation">;</span>
+
+<span class="token comment">// 清除特定数据</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">WHERE</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">// 清除表（自增id，id会重新开始）</span>
+<span class="token keyword">TRUNCATE</span> <span class="token keyword">TABLE</span> table_name<span class="token punctuation">;</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="七、单表数据记录查询"><a href="#七、单表数据记录查询" class="header-anchor">#</a> 七、单表数据记录查询</h2> <h3 id="基本查询语句"><a href="#基本查询语句" class="header-anchor">#</a> 基本查询语句</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 条件查询sql？</span>
+<span class="token keyword">SELECT</span> col_name <span class="token keyword">FROM</span> table_name <span class="token keyword">WHERE</span> condition<span class="token punctuation">;</span>
+<span class="token comment">// 多条件用AND，OR，IN连接条件</span>
+
+<span class="token comment">// 排序sql？ORDER BY</span>
+<span class="token comment">// 从小到大排</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span><span class="token keyword">FROM</span> tableName <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id<span class="token punctuation">;</span>
+
+<span class="token comment">// 从大到小排</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tableName <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 先遵循列1从大到小排，遇到相同数据按列2从小到大排</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tableName <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span><span class="token punctuation">,</span> num<span class="token punctuation">;</span>
+
+<span class="token comment">// 分组操作sql</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> table_name <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> col_name<span class="token punctuation">;</span>
+
+<span class="token comment">// 分组操作后筛选</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> table_name <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> col_name <span class="token keyword">HAVING</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">// 连表操作sql</span>
+<span class="token comment">// 左连接LEFT JOIN</span>
+<span class="token keyword">SELECT</span> col_name1<span class="token punctuation">,</span> col_name2 <span class="token keyword">FROM</span> table_name1 
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> table_name2 <span class="token keyword">ON</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">// 右链接RIGHT JOIN</span>
+<span class="token keyword">SELECT</span> col_name1<span class="token punctuation">,</span> col_name2 <span class="token keyword">FROM</span> table_name1 
+<span class="token keyword">RIGHT</span> <span class="token keyword">JOIN</span> table_name2 <span class="token keyword">ON</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">// 内连接INNER JOIN</span>
+<span class="token keyword">SELECT</span> col_name1<span class="token punctuation">,</span> col_name2 <span class="token keyword">FROM</span> table_name1 <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span> table_name2<span class="token punctuation">;</span>
+
+<span class="token comment">// 临时表sql？</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> table_name <span class="token keyword">AS</span> t_name<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="十-mysql常用函数"><a href="#十-mysql常用函数" class="header-anchor">#</a> 十 MySQL常用函数</h2> <h3 id="数值函数"><a href="#数值函数" class="header-anchor">#</a> 数值函数</h3> <ul><li>用于处理数值方面的运算</li> <li><img src="/img/mysql-2.png" alt="foo"></li></ul> <h2 id="十一-索引"><a href="#十一-索引" class="header-anchor">#</a> 十一 索引</h2> <h3 id="操作"><a href="#操作" class="header-anchor">#</a> 操作</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 普通索引sql：加速查找INDEX</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> table_name<span class="token punctuation">(</span>
+Id <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token keyword">INDEX</span> n_index<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 已有</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name <span class="token keyword">ADD</span> <span class="token keyword">INDEX</span> n_index col_name<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> n_index <span class="token keyword">ON</span> table_name col_name
+
+<span class="token comment">// 主键索引sql：加速查找；约束（主键不能为空，不能重复）</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test <span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> test_PrimaryKey <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PrimaryKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 唯一索引sql：加速查找；约束（索引不能重复）UNIQUE</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> table_name<span class="token punctuation">(</span>
+Id <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token keyword">UNIQUE</span> m_unique<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 组合索引sql：多列组成一个索引（联合主键索引，唯一索引，联合普通索引）</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> table_name<span class="token punctuation">(</span>
+Id <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token keyword">INDEX</span> n_index<span class="token punctuation">(</span>name<span class="token punctuation">,</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="十二-视图"><a href="#十二-视图" class="header-anchor">#</a> 十二 视图</h2> <h3 id="概念"><a href="#概念" class="header-anchor">#</a> 概念</h3> <ul><li>与操作基表相比，视图主要优势是简单安全数据独立。</li> <li>视图的表结构和数据都能修改，且基表会随视图数据改变而改变。</li></ul> <h3 id="用法"><a href="#用法" class="header-anchor">#</a> 用法</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">// 创建视图</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> v_name<span class="token punctuation">[</span><span class="token punctuation">(</span>column_list<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token keyword">AS</span> Select_statment<span class="token punctuation">;</span>
+
+<span class="token comment">// 查看视图结构</span>
+<span class="token keyword">DESC</span> vname
+
+<span class="token comment">// 查看视图定义语句</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 修改视图</span>
+<span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> <span class="token keyword">VIEW</span>
+<span class="token keyword">ALTER</span>
+
+<span class="token comment">// 删除视图</span>
+<span class="token keyword">DROP</span> <span class="token keyword">view</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">10/17/2021, 8:21:50 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库概述" class="sidebar-link reco-side-数据库概述" data-v-70334359>数据库概述</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#一、概念" class="sidebar-link reco-side-一、概念" data-v-70334359>一、概念</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库特点" class="sidebar-link reco-side-数据库特点" data-v-70334359>数据库特点</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库类型" class="sidebar-link reco-side-数据库类型" data-v-70334359>数据库类型</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据模型" class="sidebar-link reco-side-数据模型" data-v-70334359>数据模型</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库系统-dbs-构成" class="sidebar-link reco-side-数据库系统-dbs-构成" data-v-70334359>数据库系统（DBS）构成</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#mysql优势" class="sidebar-link reco-side-mysql优势" data-v-70334359>MySQL优势</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#二、安装" class="sidebar-link reco-side-二、安装" data-v-70334359>二、安装</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#mysql服务的基本操作" class="sidebar-link reco-side-mysql服务的基本操作" data-v-70334359>MySQL服务的基本操作</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#三、数据库基本操作" class="sidebar-link reco-side-三、数据库基本操作" data-v-70334359>三、数据库基本操作</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库构成" class="sidebar-link reco-side-数据库构成" data-v-70334359>数据库构成</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据库相关命令" class="sidebar-link reco-side-数据库相关命令" data-v-70334359>数据库相关命令</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#四、存储引擎、数据类型和字符集" class="sidebar-link reco-side-四、存储引擎、数据类型和字符集" data-v-70334359>四、存储引擎、数据类型和字符集</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#存储引擎" class="sidebar-link reco-side-存储引擎" data-v-70334359>存储引擎</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数据类型" class="sidebar-link reco-side-数据类型" data-v-70334359>数据类型</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#字符集" class="sidebar-link reco-side-字符集" data-v-70334359>字符集</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#五、数据表基本操作" class="sidebar-link reco-side-五、数据表基本操作" data-v-70334359>五、数据表基本操作</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#创建数据表" class="sidebar-link reco-side-创建数据表" data-v-70334359>创建数据表</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#表相关操作" class="sidebar-link reco-side-表相关操作" data-v-70334359>表相关操作</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#六、数据的插入修改和删除" class="sidebar-link reco-side-六、数据的插入修改和删除" data-v-70334359>六、数据的插入修改和删除</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#插入数据" class="sidebar-link reco-side-插入数据" data-v-70334359>插入数据</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#修改语句" class="sidebar-link reco-side-修改语句" data-v-70334359>修改语句</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#删除语句" class="sidebar-link reco-side-删除语句" data-v-70334359>删除语句</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#七、单表数据记录查询" class="sidebar-link reco-side-七、单表数据记录查询" data-v-70334359>七、单表数据记录查询</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#基本查询语句" class="sidebar-link reco-side-基本查询语句" data-v-70334359>基本查询语句</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#十-mysql常用函数" class="sidebar-link reco-side-十-mysql常用函数" data-v-70334359>十 MySQL常用函数</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#数值函数" class="sidebar-link reco-side-数值函数" data-v-70334359>数值函数</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#十一-索引" class="sidebar-link reco-side-十一-索引" data-v-70334359>十一 索引</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#操作" class="sidebar-link reco-side-操作" data-v-70334359>操作</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#十二-视图" class="sidebar-link reco-side-十二-视图" data-v-70334359>十二 视图</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#概念" class="sidebar-link reco-side-概念" data-v-70334359>概念</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sql/reviewMySQL.html#用法" class="sidebar-link reco-side-用法" data-v-70334359>用法</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div class="RibbonAnimation"></div><div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div><!----></div></div>
+    <script src="/assets/js/app.617e32b2.js" defer></script><script src="/assets/js/3.f97a72c8.js" defer></script><script src="/assets/js/1.23c60b83.js" defer></script><script src="/assets/js/55.6dd5b2d8.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>设计模式summer | yuiyake</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/g9.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="你好呀">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.18a1695c.css" as="style"><link rel="preload" href="/assets/js/app.617e32b2.js" as="script"><link rel="preload" href="/assets/js/3.f97a72c8.js" as="script"><link rel="preload" href="/assets/js/1.23c60b83.js" as="script"><link rel="preload" href="/assets/js/52.3eaaef6c.js" as="script"><link rel="prefetch" href="/assets/js/10.c60f11b8.js"><link rel="prefetch" href="/assets/js/11.d99a1e77.js"><link rel="prefetch" href="/assets/js/12.486d5b9f.js"><link rel="prefetch" href="/assets/js/13.bcdbc63d.js"><link rel="prefetch" href="/assets/js/14.f5d3e58d.js"><link rel="prefetch" href="/assets/js/15.859f649e.js"><link rel="prefetch" href="/assets/js/16.7636f725.js"><link rel="prefetch" href="/assets/js/17.459b38c8.js"><link rel="prefetch" href="/assets/js/18.97f361cc.js"><link rel="prefetch" href="/assets/js/19.c7139f70.js"><link rel="prefetch" href="/assets/js/20.b4ac0b8a.js"><link rel="prefetch" href="/assets/js/21.2ce33425.js"><link rel="prefetch" href="/assets/js/22.f6232f77.js"><link rel="prefetch" href="/assets/js/23.afa461f2.js"><link rel="prefetch" href="/assets/js/24.8913772b.js"><link rel="prefetch" href="/assets/js/25.1ea28d3e.js"><link rel="prefetch" href="/assets/js/26.262aa695.js"><link rel="prefetch" href="/assets/js/27.72d9efeb.js"><link rel="prefetch" href="/assets/js/28.894dc616.js"><link rel="prefetch" href="/assets/js/29.601e3597.js"><link rel="prefetch" href="/assets/js/30.88d5e5a1.js"><link rel="prefetch" href="/assets/js/31.8d409de6.js"><link rel="prefetch" href="/assets/js/32.c3b1cee6.js"><link rel="prefetch" href="/assets/js/33.009a16f4.js"><link rel="prefetch" href="/assets/js/34.7ea0bf1e.js"><link rel="prefetch" href="/assets/js/35.280b5bb7.js"><link rel="prefetch" href="/assets/js/36.7116c145.js"><link rel="prefetch" href="/assets/js/37.58d1a8fe.js"><link rel="prefetch" href="/assets/js/38.d405d1e1.js"><link rel="prefetch" href="/assets/js/39.680d9dd1.js"><link rel="prefetch" href="/assets/js/4.018ff8c0.js"><link rel="prefetch" href="/assets/js/40.c513d39b.js"><link rel="prefetch" href="/assets/js/41.f018a7e8.js"><link rel="prefetch" href="/assets/js/42.a18391d6.js"><link rel="prefetch" href="/assets/js/43.cf133721.js"><link rel="prefetch" href="/assets/js/44.3d9615d1.js"><link rel="prefetch" href="/assets/js/45.8e171438.js"><link rel="prefetch" href="/assets/js/46.992a34b6.js"><link rel="prefetch" href="/assets/js/47.180368ee.js"><link rel="prefetch" href="/assets/js/48.a3adc500.js"><link rel="prefetch" href="/assets/js/49.c95c9ddf.js"><link rel="prefetch" href="/assets/js/5.7008f02b.js"><link rel="prefetch" href="/assets/js/50.47967b33.js"><link rel="prefetch" href="/assets/js/51.36ee7272.js"><link rel="prefetch" href="/assets/js/53.bd54a45d.js"><link rel="prefetch" href="/assets/js/54.8624e8c6.js"><link rel="prefetch" href="/assets/js/55.6dd5b2d8.js"><link rel="prefetch" href="/assets/js/56.2e69bb95.js"><link rel="prefetch" href="/assets/js/57.445f6e0d.js"><link rel="prefetch" href="/assets/js/58.5467f33b.js"><link rel="prefetch" href="/assets/js/59.b79494c9.js"><link rel="prefetch" href="/assets/js/6.0f1045c3.js"><link rel="prefetch" href="/assets/js/60.a7f5b6cb.js"><link rel="prefetch" href="/assets/js/61.1dae8ab9.js"><link rel="prefetch" href="/assets/js/62.89cb7280.js"><link rel="prefetch" href="/assets/js/63.7c4da50a.js"><link rel="prefetch" href="/assets/js/64.77bb5952.js"><link rel="prefetch" href="/assets/js/65.8a128aff.js"><link rel="prefetch" href="/assets/js/66.0c0fbf6f.js"><link rel="prefetch" href="/assets/js/67.9463c779.js"><link rel="prefetch" href="/assets/js/68.36b5c7ef.js"><link rel="prefetch" href="/assets/js/69.7b114b5d.js"><link rel="prefetch" href="/assets/js/7.7349b289.js"><link rel="prefetch" href="/assets/js/8.a52e95ed.js"><link rel="prefetch" href="/assets/js/9.6462b371.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.18a1695c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>yuiyake</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>你好呀</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>yuiyake</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">yuiyake</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/interview/" class="nav-link"><i class="undefined"></i>
+  面试相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计组/" class="nav-link"><i class="undefined"></i>
+  计组
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计网/" class="nav-link"><i class="undefined"></i>
+  计网
+</a></li><li class="dropdown-item"><!----> <a href="/categories/操作系统/" class="nav-link"><i class="undefined"></i>
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javaee/" class="nav-link"><i class="undefined"></i>
+  javaee
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/剑指offer/" class="nav-link"><i class="undefined"></i>
+  剑指offer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件测试/" class="nav-link"><i class="undefined"></i>
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/three/" class="nav-link"><i class="undefined"></i>
+  three
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件设计/" class="nav-link"><i class="undefined"></i>
+  软件设计
+</a></li><li class="dropdown-item"><!----> <a href="/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uml/" class="nav-link"><i class="undefined"></i>
+  uml
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Yuiyake" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/img/pic.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    yuiyake
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>58</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>1</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/interview/" class="nav-link"><i class="undefined"></i>
+  面试相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计组/" class="nav-link"><i class="undefined"></i>
+  计组
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计网/" class="nav-link"><i class="undefined"></i>
+  计网
+</a></li><li class="dropdown-item"><!----> <a href="/categories/操作系统/" class="nav-link"><i class="undefined"></i>
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javaee/" class="nav-link"><i class="undefined"></i>
+  javaee
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/剑指offer/" class="nav-link"><i class="undefined"></i>
+  剑指offer
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件测试/" class="nav-link"><i class="undefined"></i>
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/three/" class="nav-link"><i class="undefined"></i>
+  three
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件设计/" class="nav-link"><i class="undefined"></i>
+  软件设计
+</a></li><li class="dropdown-item"><!----> <a href="/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/uml/" class="nav-link"><i class="undefined"></i>
+  uml
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Yuiyake" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>设计模式summer</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>yuiyake</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">设计模式summer</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>yuiyake</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>6/26/2021</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h2 id="设计原则"><a href="#设计原则" class="header-anchor">#</a> 设计原则</h2> <ol><li>单一指责原则
+<ul><li>一个类只有一个引起它变化的原因，应该只有一个指责。</li></ul></li> <li>开闭原则
+<ul><li>对扩展开放，对修改关闭。尽量避免修改源代码的行为。</li></ul></li> <li>里式替换原则
+<ul><li>任何基类可以出现的地方，子类一定可以出现。lsp是继承复用的基石，
+衍生类可以替换掉基类或者在基类上增加新行为</li></ul></li> <li>依赖倒转原则
+<ul><li>依赖于抽象，不要依赖于具体。关键是抽象化，实现解耦，降低耦合度。</li></ul></li> <li>接口隔离原则
+<ul><li>用多个隔离的接口，比用单个接口好。</li></ul></li> <li>合成复用原则
+<ul><li>要尽量使用组合/聚合关系，少用继承。</li></ul></li> <li>迪米特法则
+<ul><li>一个实体应当尽量少的与其他实体发生相互作用。</li></ul></li></ol> <h2 id="创建型模式"><a href="#创建型模式" class="header-anchor">#</a> 创建型模式</h2> <h3 id="单例模式"><a href="#单例模式" class="header-anchor">#</a> 单例模式</h3> <ul><li>懒汉式（调用才实例）
+<ol><li>步骤</li></ol> <ul><li>创建单例类，声明自己静态私有对象，创建私有构造方法和以自己为实例返回值的静态公有方法，工厂方法，里面是被动创建（if自己==null， 则create）</li> <li>客户端 将但李磊实例化，调用</li> <li>线程不安全，延迟初始化</li></ul> <ol start="2"><li>代码(这是改进过的线程安全版)</li></ol> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+   <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> instance<span class="token punctuation">;</span>  
+   <span class="token keyword">private</span> <span class="token class-name">Singleton</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">synchronized</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+       <span class="token keyword">if</span> <span class="token punctuation">(</span>instance <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+           instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+       <span class="token punctuation">}</span>  
+       <span class="token keyword">return</span> instance<span class="token punctuation">;</span>  
+   <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li> <li>饿汉式（声明即实例）
+<ol><li>步骤</li></ol> <ul><li>创建单例类，声明并创建自己的静态私有对象和私有构造方法，还有自己类型返回自己的静态公有方法，静态工厂方法</li> <li>客户端一样</li></ul> <ol start="2"><li>代码</li></ol> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token keyword">private</span> <span class="token class-name">Singleton</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> instance<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li>优缺点
+<ul><li>优 节约系统资源，允许可变数目的实例，提供了对唯一实例的受控访问</li> <li>缺 单例模式扩展会十分困难，违背单依职责原则</li></ul></li></ul> <h3 id="工厂模式"><a href="#工厂模式" class="header-anchor">#</a> 工厂模式</h3> <ul><li>抽象工厂</li></ul> <ol><li><p>动机</p> <ul><li>系统中产品有多于一个的产品族，但只消费其中一种。解决接口选择的问题。</li></ul></li> <li><p>步骤</p> <ul><li>包含这些角色</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>AbstractFactory：抽象工厂
+ConcreteFactory：具体工厂
+AbstractProduct：抽象产品
+ConcreteProduct：具体产品
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>为产品创建接口，并创建实现接口的实体类。</li> <li>为产品对象创建抽象类</li> <li>创建扩展抽象类的实体类，基于给定的信息生成实体类对象</li> <li>创建工厂创造器类，通过传递产品信息获取工厂</li> <li>client</li></ul></li></ol> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 抽象工厂</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">AbstractFactory</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">AbstractProductA</span> <span class="token function">createProductA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">AbstractProductB</span> <span class="token function">createProductB</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 具体工厂</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteFactory1</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractFactory</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> abstractProductA <span class="token function">createProductA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteProductA1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> abstractProductA <span class="token function">createProductA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteProductA1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>优点
+<ul><li>隔离了具体类的生成，使得客户端并不需要知道什么被创建</li> <li>当一个产品族中的多个对象被设计成一起工作时，它能够保证客户端始终只使用同一个产品族中的对象</li> <li>增加新的产品族很方便，无须修改已有系统，符合开闭原则</li></ul></li> <li>缺点
+<ul><li>增加新的产品等级结构麻烦，需要对原有系统进行较大的修改，甚至需要修改抽象层代码，这显然会带来较大的不便，违背了开闭原则</li></ul></li></ul> <h3 id="原型模式"><a href="#原型模式" class="header-anchor">#</a> 原型模式</h3> <ol><li>动机
+<ul><li>通过给出一个原型对象指明所要创建的对象的类型，然后通过复制这个原型对象的办法创建出更多同类型的对象。</li></ul></li> <li>步骤</li></ol> <ul><li>包含这些角色</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Prototype(抽象原型类)
+ConcretePrototype(具体原型类)
+Client(客户端)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 浅克隆</span>
+<span class="token keyword">public</span> clas <span class="token class-name">PrototypeDemo</span> <span class="token keyword">implements</span> <span class="token class-name">Cloneable</span> <span class="token punctuation">{</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Object</span> obj <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span><span class="token punctuation">{</span>
+        object <span class="token operator">=</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">CloneNotSupportException</span> exception<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>err<span class="token punctuation">.</span><span class="token function">printlm</span><span class="token punctuation">(</span><span class="token string">&quot;Not support cloneable&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 客户端调用</span>
+<span class="token class-name">PrototypeDemo</span> obj1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PrototypeDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">PrototypeDemo</span> obj2 <span class="token operator">=</span> obj1<span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li><p>浅克隆</p> <ul><li>创建具体原型类继承Cloneable（自带），调用Object的clone()方法返回一个克隆的原型对象</li> <li>客户端</li></ul></li> <li><p>深克隆</p> <ul><li>创建具体原型类，这个深克隆后面自己看代码吧orz他是没有用clone()方法的，用流来实现</li></ul></li> <li><p>优点： 1、性能提高。 2、逃避构造函数的约束。</p></li> <li><p>缺点： 1、配备克隆方法需要对类的功能进行通盘考虑，这对于全新的类不是很难，但对于已有的类不一
+定很容易，特别当一个类引用不支持串行化的间接对象，或者引用含有循环结构的时候。 2、必须实现
+Cloneable 接口。</p></li></ul> <h3 id="建造者模式"><a href="#建造者模式" class="header-anchor">#</a> 建造者模式</h3> <ol><li>动机
+<ul><li>将一个复杂对象的构建与它的表示分离，使同样的构建过程可以构建不同的表示。</li></ul></li> <li>步骤
+<ul><li>包含这些角色</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Builder(抽象建造者)
+ConcreteBuilder(具体建造者)
+Product(产品角色)
+Director(指挥者)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>创建产品类，定义各产品对象及getter，setter</li> <li>创建抽象建造者类，定义抽象方法和定义产品类的对象getChan返回产品对象</li> <li>创建具体建造者类A，B...继承抽象，改写方法</li> <li>创建指挥者类，定义抽象建造者类型对象，再声明一个方法调用对象的部分组装方法和工厂方法。</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Protect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> sex<span class="token punctuation">;</span>
+    <span class="token class-name">Setter</span><span class="token operator">&amp;</span><span class="token class-name">Getter</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Builder</span> <span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token class-name">Product</span> product <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Product</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">buildName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">buildSex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">public</span> <span class="token class-name">Product</span> <span class="token function">getResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> product<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Director</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">Builder</span> builder<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">Director</span><span class="token punctuation">(</span><span class="token class-name">Builder</span> builder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>builder <span class="token operator">=</span> builder<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setBuilder</span><span class="token punctuation">(</span><span class="token class-name">Builder</span> builder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>builder <span class="token operator">=</span> builder<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token class-name">Product</span> <span class="token function">construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        builder<span class="token punctuation">.</span>buildName<span class="token punctuation">;</span>
+        builder<span class="token punctuation">.</span>buildSex<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> builder<span class="token punctuation">.</span>getBuildt<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div></li></ol> <ul><li>优点： 1、建造者独立，易扩展。 2、便于控制细节风险。</li> <li>缺点： 1、产品必须有共同点，范围有限制。 2、如内部变化复杂，会有很多的建造类。</li></ul> <h2 id="结构型模式"><a href="#结构型模式" class="header-anchor">#</a> 结构型模式</h2> <h3 id="适配器模式"><a href="#适配器模式" class="header-anchor">#</a> 适配器模式</h3> <ul><li>动机
+<ol><li>现有接口需要转化为客户类期望的接口，保证复用现有类。（通俗解释就是我的本子需要充电，但是要求的电压和插座电压不一致，
+这时候就要一个电源适配器。）</li></ol></li> <li>类适配器
+<img src="/img/shipei-1.png" alt="foo"></li> <li>对象适配器
+<img src="/img/shipei-2.png" alt="foo"></li></ul> <ol start="2"><li>包含以下<div class="language- line-numbers-mode"><pre class="language-text"><code>Target(目标抽象类)
+Adapter(适配器类)
+Adaptee(适配者类)
+Client(客户端)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div>主要代码<div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 类适配器</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Adapter</span> <span class="token keyword">extends</span> <span class="token class-name">Adaptee</span> <span class="token keyword">implements</span> <span class="token class-name">Target</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">specificRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 对象适配器</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Adapter</span> <span class="token keyword">extends</span> <span class="token class-name">Target</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">Adaptee</span> adaptee<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">Adapter</span><span class="token punctuation">(</span><span class="token class-name">Adaptee</span> adaptee<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adaptee <span class="token operator">=</span> adaptee<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       adaptee<span class="token punctuation">.</span><span class="token function">specificRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></li></ol> <ul><li>优缺点
+<ul><li>优点
+<ol><li>增加了类的透明性和复用性</li> <li>灵活性和扩展性都非常好</li> <li>适配器与目标解耦</li></ol></li> <li>缺点
+<ul><li>对象适配器
+<ol><li>与类适配器模式相比，要想置换适配者类的方法就不容易。</li></ol></li> <li>类适配器
+<ol><li>对于Java、C#等不支持多重继承的语言，一次最多只能适配一个适配者类，而且目标抽象类只能为抽象类，不能为具体类，
+其使用有一定的局限性，不能将一个适配者类和它的子类都适配到目标接口。</li></ol></li></ul></li></ul></li></ul> <h3 id="桥接模式"><a href="#桥接模式" class="header-anchor">#</a> 桥接模式</h3> <ol><li>动机
+<ul><li>将抽象部分与实现部分分离，使它们可以独立变化（有点aop内味了）。</li></ul></li> <li>步骤
+<ul><li>包含这些角色</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Abstraction(抽象类)
+RefinedAbstraction(扩充抽象类)
+Implementor(实现类接口)
+ConcreteImplementor(具体实现类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>创建产品类，定义各产品对象及getter，setter</li> <li>创建抽象建造者类，定义抽象方法和定义产品类的对象getChan返回产品对象</li> <li>创建具体建造者类A，B...继承抽象，改写方法</li> <li>创建指挥者类，定义抽象建造者类型对象，再声明一个方法调用对象的部分组装方法和工厂方法。</li></ul></li></ol> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 抽象化</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Implementor</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">operationImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 实现化</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Abstraction</span> <span class="token punctuation">{</span>
+   <span class="token keyword">protected</span> <span class="token class-name">Implementor</span> impl<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setImp</span><span class="token punctuation">(</span><span class="token class-name">Implementor</span> impl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>impl <span class="token operator">=</span> impl<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 脱耦</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RefineAbstraction</span> <span class="token keyword">extends</span> <span class="token class-name">Abstraction</span><span class="token punctuation">{</span>
+   publid <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+      impl<span class="token punctuation">.</span><span class="token function">operationImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><ul><li>优点： 1、抽象和实现的分离。 2、优秀的扩展能力。 3、实现细节对客户透明。</li> <li>缺点：桥接模式的引入会增加系统的理解与设计难度，由于聚合关联关系建立在抽象层，要求开发者针对抽象进行设计与编程。</li></ul> <h3 id="组合模式"><a href="#组合模式" class="header-anchor">#</a> 组合模式</h3> <ol><li><p>动机</p> <ul><li>通过组合多个对象形成树形结构以表示整体-部分的结构，对叶子对象和容器对象的使用具有一致性。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Component(抽象构件)
+Leaf(叶子构件)
+Composite(容器构件)
+Client
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>透明组合模式</li> <li>安全组合模式</li> <li>透明和安全的区别在透明是所有方法都直接声明在抽象构件里的，但是安全是只声明全局方法，其他的add啊remove啊这些都是在容器构件里实现</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 这是透明组合模式的抽象构件，全部方法都声明在内，容器或叶子构件都要继承但不一定用得上</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">Component</span> <span class="token function">getChild</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 叶子组件</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Leaf</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 异常处理or错误提示}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 异常处理or错误提示}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">Component</span> <span class="token function">getChild</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 异常处理or错误提示 return null;}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token comment">// 具体实现代码</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 容器构件,主要是operation方法把容器里的叶子一个个拎出来执行一遍</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Composite</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">ArrayList</span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Component</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      list<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">Component</span> <span class="token function">getChild</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token class-name">Component</span><span class="token punctuation">)</span>list<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token operator">:</span>list<span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Component</span><span class="token punctuation">)</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><ul><li>优点： 1、高层模块调用简单。 2、节点自由增加。</li> <li>缺点：在使用组合模式时，其叶子和树枝的声明都是实现类，而不是接口，违反了依赖倒置原则。</li></ul> <h3 id="装饰模式"><a href="#装饰模式" class="header-anchor">#</a> 装饰模式</h3> <ol><li><p>动机</p> <ul><li>动态给对象增加一些额外职责。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Component(抽象构件)
+ConcreteComponent(具体构件)
+Decorator(抽象装饰类)
+ConcreteDecorator(具体装饰类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 抽象装饰类，里面并没有具体的实施代码，只是调用component对象的operation方法，提供一个统一的接口给子类完成。</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Decorator</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">Component</span> component<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Decorator</span><span class="token punctuation">(</span><span class="token class-name">Component</span> component<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>component <span class="token operator">=</span> component<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      component<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 具体装饰类，继承抽象的方法同时也可以自己新增方法</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteDecorator</span> <span class="token keyword">extends</span> <span class="token class-name">Dector</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token class-name">ConcreteDecorator</span><span class="token punctuation">(</span><span class="token class-name">Component</span> component<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">super</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">addedBehavior</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">addedBehavior</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 新增方法</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><ul><li>优点：装饰类和被装饰类可以独立发展，不会相互耦合，装饰模式是继承的一个替代模式，装饰模式可以动态扩展一个实现类的功能。</li> <li>缺点：多层装饰比较复杂。</li></ul> <h3 id="外观模式"><a href="#外观模式" class="header-anchor">#</a> 外观模式</h3> <ol><li><p>动机</p> <ul><li>为复杂子系统提供一个统一入口。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Facade(外观角色)
+SubSystem(子系统角色)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 外观类更像是一个控制开关，负责调用各个子系统里的方法</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Facade</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">SubSystemA</span> obj1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SubStstemA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">private</span> <span class="token class-name">SubSystemB</span> obj2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SubStstemB</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">method</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      obj1<span class="token punctuation">.</span><span class="token function">method</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      obj2<span class="token punctuation">.</span><span class="token function">method</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>优点： 1、减少系统相互依赖。 2、提高灵活性。 3、提高了安全性。</li> <li>缺点：不符合开闭原则，如果要改东西很麻烦，继承重写都不合适。</li></ul> <h3 id="享元模式"><a href="#享元模式" class="header-anchor">#</a> 享元模式</h3> <ol><li><p>动机</p> <ul><li>通过运用共享技术有效地支持大量细粒度对象的复用。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Flyweight(抽象享元类)
+ConcreteFlyweight(具体享元类)
+UnsharedConcreteFlyweight(非共享具体享元类)
+FlyweightFactory(享元工厂类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 享元工厂</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FlyweightFactory</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">HashMap</span> flyweights <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Flyweight</span> <span class="token function">getFlyweight</span><span class="token punctuation">(</span><span class="token class-name">String</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>flyweights<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span>
+         <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token class-name">Flyweight</span><span class="token punctuation">)</span>flyweights<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token class-name">Flyweight</span> fw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteFlyweight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          flyweights<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span>fw<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span> fw<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 享元类</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Flyweight</span> <span class="token punctuation">{</span>
+   <span class="token comment">//内部状态作为成员属性，同一个享元对象其内部状态一致</span>
+   <span class="token keyword">private</span> <span class="token class-name">String</span> intrinsicState<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Flyweight</span><span class="token punctuation">(</span><span class="token class-name">String</span> intrinsicState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>intrinsicState <span class="token operator">=</span> intrinsicState<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token comment">// 3外部状态在使用时由外部状态设置，不保存在享元对象中，同一个对象每次调用都可以传入不同的外部状态</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token class-name">String</span> extrinsicState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//....省略具体代码</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><ul><li>优点：大大减少对象的创建，降低系统的内存，使效率提高。</li> <li>缺点：提高了系统的复杂度，需要分离出外部状态和内部状态，而且外部状态具有固有化的性质，不应该随着内部状态的变化而变化，否则会造成系统的混乱。</li></ul> <h3 id="代理模式"><a href="#代理模式" class="header-anchor">#</a> 代理模式</h3> <ol><li><p>动机</p> <ul><li>给扣一个对象一共一个代理，并由代理对象控制对原对象的引用。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Subject(抽象主题角色)
+Proxy(代理主题角色)
+RealSubject(真实主题角色)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 代理类就负责接收，执行并传递结果</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Proxy</span> <span class="token keyword">implements</span> <span class="token class-name">Subject</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">RealSubject</span> rs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RealSubject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">preRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">preRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      rs<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">postRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">postRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>优点： 1、职责清晰。 2、高扩展性。 3、智能化。</li> <li>缺点： 1、由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢。 2、实现代理模式需要额外的工作，有些代理模式的实现非常复杂。</li></ul> <h2 id="行为型模式"><a href="#行为型模式" class="header-anchor">#</a> 行为型模式</h2> <h3 id="观察者模式"><a href="#观察者模式" class="header-anchor">#</a> 观察者模式</h3> <ol><li><p>动机</p> <ul><li>定义了对象间的一种一对多依赖关系，使得每当一个对象状态发生改变时，其相关依赖对象皆得到通知并被自动更新。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Subject(目标/被观察对象)
+ConcreteSubject(具体目标)
+Observer(观察者)
+ConcreteObserver(具体观察者)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 具体目标，声明三个方法，期中attach和remove是被观察对象的集合，用来添加&amp;取出对象，notify是通知</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteSubject</span> <span class="token keyword">extends</span> <span class="token class-name">Subject</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">attach</span><span class="token punctuation">(</span><span class="token class-name">Observer</span> observer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      observers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>observer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Observer</span> observer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      observers<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>observer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obs<span class="token operator">:</span>observers<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Observer</span><span class="token punctuation">)</span>obs<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 抽象观察者角色一般定义为一个接口，为不同观察者的更新行为定义相同的借口，其方法在子类实现。</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Observer</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 实现具体方法</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteObserver</span> <span class="token keyword">implements</span> <span class="token class-name">Observer</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//具体代码}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 这是客户端调用的代码段</span>
+<span class="token class-name">Subject</span> sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteSubject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Observer</span> ob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteObserver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+sb<span class="token punctuation">.</span><span class="token function">attach</span><span class="token punctuation">(</span>ob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+sb<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><ul><li>优点： 1、观察者和被观察者是抽象耦合的。 2、建立一套触发机制。</li> <li>缺点： 1、如果一个被观察者对象有很多的直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间。 2、如果
+在观察者和观察目标之间有循环依赖的话，观察目标会触发它们之间进行循环调用，可能导致系统崩溃。 3、观察者模式没
+有相应的机制让观 察者知道所观察的目标对象是怎么发生变化的，而仅仅只是知道观察目标发生了变化。</li></ul> <h3 id="状态模式"><a href="#状态模式" class="header-anchor">#</a> 状态模式</h3> <ol><li><p>动机</p> <ul><li>允许一个对象在其内部状态改变时改变他的行为。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Context(环境类)
+State(抽象状态类)
+ConcreteState(具体状态类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 这里是用代码段表示意思，具体会很复杂看例子吧orz</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>预定房间<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   预定操作<span class="token punctuation">;</span>
+   context<span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token keyword">new</span> 已预定状态类<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>入住房间<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   入住操作<span class="token punctuation">;</span>
+   context<span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token keyword">new</span> 已入住状态类<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>优点： 1、观察者和被观察者是抽象耦合的。 2、建立一套触发机制。</li> <li>缺点： 1、如果一个被观察者对象有很多的直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间。 2、如果在观察者和观察目标之间有循
+环依赖的话，观察目标会触发它们之间进行循环调用，可能导致系统崩溃。 3、观察者模式没有相应的机制让观察者知道所观察的目标对象是怎么发
+生变化的，而仅仅只是知道观察目标发生了变化。</li></ul> <h3 id="策略模式"><a href="#策略模式" class="header-anchor">#</a> 策略模式</h3> <ol><li><p>动机</p> <ul><li>定义一系列算法，并将每个算法封装在一个类中，让它们可以相互替换，策略模式让算法独立于使用它的客户而变化。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Context(环境类)
+Strategy(抽象策略类)
+ConcreteStrategy(具体策略类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 抽象策略类</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">AbstractStrategy</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">algorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 具体策略类</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteStrategyA</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractStrategy</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">algorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//算法A代码</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 环境类，建立与抽象策略类之间的关联关系</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Context</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">AbstractStrategy</span> strategy<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setStrategy</span><span class="token punctuation">(</span><span class="token class-name">AbstractStrategy</span> strategy<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>strategy <span class="token operator">=</span> strategy<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">algorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      strategy<span class="token punctuation">.</span><span class="token function">algorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 客户端片段</span>
+<span class="token class-name">Context</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Context</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">AbstractStrategy</span> strategy<span class="token punctuation">;</span>
+strategy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteStrategyA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c<span class="token punctuation">.</span><span class="token function">setStrategy</span><span class="token punctuation">(</span>strategy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+c<span class="token punctuation">.</span><span class="token function">algorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><ul><li>优点： 1、算法可以自由切换。 2、避免使用多重条件判断。 3、扩展性良好。</li> <li>缺点： 1、策略类会增多。 2、所有策略类都需要对外暴露。</li></ul> <h3 id="解释器模式"><a href="#解释器模式" class="header-anchor">#</a> 解释器模式</h3> <ol><li><p>动机</p> <ul><li>描述如何为语言定义一个问法，如何在该语言中表示一个句子，以及如何解释这些句子。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>AbstractException(抽象表达式)
+TerminalException(终结符表达式)
+NonterminalException(非终结符表达式)
+Context(环境类)
+Client
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">//呃代码有点复杂自己去看吧这个不好总结orz</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>优点： 1、可扩展性比较好，灵活。 2、增加了新的解释表达式的方式。 3、易于实现简单文法。</li> <li>缺点： 1、可利用场景比较少。 2、对于复杂的文法比较难维护。 3、解释器模式会引起类膨胀。 4、解释器模式采用递归调用方法。</li></ul> <h3 id="模板方法模式"><a href="#模板方法模式" class="header-anchor">#</a> 模板方法模式</h3> <ol><li><p>动机</p> <ul><li>定义一个操作中算法的骨架，而将一些步骤延迟到子类中。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>AbstractClass(抽象类)
+ConcreteClass(具体子类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">AbstractClass</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">templateMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">primitiveOperation1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">primitiveOperation2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">primitiveOperation3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">primitiveOperation1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment">//具体方法</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">primitiveOperation2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//抽象方法</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">primitiveOperation3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment">//钩子方法</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteClass</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractClass</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">primitiveOperation2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//实现代码</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">primitiveOperation3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      实现代码
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>优点： 1、封装不变部分，扩展可变部分。 2、提取公共代码，便于维护。 3、行为由父类控制，子类实现。</li> <li>缺点：每一个不同的实现都需要一个子类来实现，导致类的个数增加，使得系统更加庞大。</li></ul> <h3 id="职责链模式"><a href="#职责链模式" class="header-anchor">#</a> 职责链模式</h3> <ol><li><p>动机</p> <ul><li>避免请求发送者与接受者耦合在一起，让多个对象都有可能接收到请求，将这些对象连接成一条链，并且沿着这条链传递请求，直到有对象处理它为止。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Handler(抽象处理者)
+ConcreteHandler(具体处理者)
+Client
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Handler</span> <span class="token punctuation">{</span>
+   <span class="token keyword">protected</span> <span class="token class-name">Handler</span> successor<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSuccessor</span><span class="token punctuation">(</span><span class="token class-name">Handler</span> successor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>successor <span class="token operator">=</span> successor<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">handleRequest</span><span class="token punctuation">(</span><span class="token class-name">String</span> request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteHandler</span> <span class="token keyword">extends</span> <span class="token class-name">Handler</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handleRequest</span><span class="token punctuation">(</span><span class="token class-name">String</span> request<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>满足条件<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//处理请求}</span>
+      <span class="token keyword">else</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>successor<span class="token punctuation">.</span><span class="token function">handleRequest</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token comment">// 转发请求</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>优点： 1、降低耦合度。它将请求的发送者和接收者解耦。 2、简化了对象。使得对象不需要知道链的结构。 3、增强给对象指派职责的灵活性。
+通过改变链内的成员或者调动它们的次序，允许动态地新增或者删除责任。 4、增加新的请求处理类很方便。</li> <li>缺点： 1、不能保证请求一定被接收。 2、系统性能将受到一定影响，而且在进行代码调试时不太方便，可能会造成循环调用。 3、可能不容
+易观察运行时的特征，有碍于除错。</li></ul> <h3 id="命令模式"><a href="#命令模式" class="header-anchor">#</a> 命令模式</h3> <ol><li><p>动机</p> <ul><li>将一个请求封装为一个对象，从而使得请求调用者和请求接收者解耦。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Command(抽象命令类)
+ConcreteCommand(具体命令类)
+Invoker(调用者)
+Receiver(接受者)
+Client(客户类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Command</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Invoker</span><span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">Command</span> command<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Invoker</span><span class="token punctuation">(</span><span class="token class-name">Command</span> command<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>command <span class="token operator">=</span> command<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> setCommand <span class="token comment">//自己写了这个</span>
+   <span class="token comment">// 用于调用命令类方法</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+      command<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Receiver</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>具体<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>优点： 1、降低了系统耦合度。 2、新的命令可以很容易添加到系统中去。</li> <li>缺点：使用命令模式可能会导致某些系统有过多的具体命令类。</li></ul> <h3 id="迭代器模式"><a href="#迭代器模式" class="header-anchor">#</a> 迭代器模式</h3> <ol><li><p>动机</p> <ul><li>提供了一种方法来访问聚合对象，而不用暴露这个对象的内部表示。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Iterator(抽象迭代器)
+ConcreteIterator(具体迭代器)
+Aggregate(抽象聚合类)
+ConcreteAggregate(具体聚合类)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 迭代器接口，定义四个方法用于访问第一个元素，下一个元素，判断是否为最后一个元素，获取当前元素</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">MyIterator</span> <span class="token punctuation">{</span>
+   <span class="token keyword">void</span> <span class="token function">first</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">void</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">boolean</span> <span class="token function">isLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token class-name">Object</span> <span class="token function">currentItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 定义聚合接口</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">MyCollection</span> <span class="token punctuation">{</span>
+   <span class="token class-name">MyIterator</span> <span class="token function">createIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 具体迭代器作为聚合类的内部类，迭代器可以直接访问聚合类中的数据</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token keyword">new</span> <span class="token class-name">Collection</span> <span class="token keyword">implements</span> <span class="token class-name">MyCollection</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;dog&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;cat&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;pig&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">MyIterator</span> <span class="token function">createIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NewIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">private</span> <span class="token keyword">class</span> <span class="token class-name">NewIterator</span> <span class="token keyword">implements</span> <span class="token class-name">MyIterator</span> <span class="token punctuation">{</span>
+      <span class="token keyword">private</span> <span class="token keyword">int</span> currentIndex<span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">first</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         currentIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> next<span class="token punctuation">)</span>_ <span class="token punctuation">{</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>currentIndex<span class="token operator">&lt;</span>obj<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            currentIndex<span class="token operator">++</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">public</span> bollean <span class="token function">isLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">return</span> currentIndex <span class="token operator">==</span> obj<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">currentItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">return</span> obj<span class="token punctuation">[</span>currentIndex<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 客户端</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Client</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token class-name">MyCollection</span> collection<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">MtIterator</span> i <span class="token operator">=</span> collection<span class="token punctuation">.</span><span class="token function">createIterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>i<span class="token punctuation">.</span><span class="token function">isLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token function">syso</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span><span class="token function">currentItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         i<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   main<span class="token punctuation">{</span>
+      <span class="token class-name">MyCollection</span> collection <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NewCollection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">process</span><span class="token punctuation">(</span>collection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><ul><li>优点： 1、它支持以不同的方式遍历一个聚合对象。 2、迭代器简化了聚合类。 3、在同一个聚合上可以有多个遍历。 4、在迭代器模式
+中，增加新的聚合类和迭代器类都很方便，无须修改原有代码。</li> <li>缺点：由于迭代器模式将存储数据和遍历数据的职责分离，增加新的聚合类需要对应增加新的迭代器类，类的个数成对增加，这在一定程
+度上增加了系统的复杂性。</li></ul> <h3 id="中介者模式"><a href="#中介者模式" class="header-anchor">#</a> 中介者模式</h3> <ol><li><p>动机</p> <ul><li>通过一个中介对象来封装一系列的对象交互，使各对象不需要显示地相互调用，从而使耦合松散，且可以独立地改变它们之间的交互。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Mediator(抽象中介者)
+ConcreteMediator(具体中介者)
+Colleague(抽象同事)
+ConcreteColleague(具体同事)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Mediator</span><span class="token punctuation">{</span>
+   <span class="token keyword">protected</span> <span class="token class-name">ArrayList</span> colleagues<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">register</span><span class="token punctuation">(</span><span class="token class-name">Colleague</span> colleague<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      colleagues<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>colleague<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 在具体中介者类里调用同事类的方法，调用时可以增加一些自己的业务代码对调用进行控制</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteMediator</span> <span class="token keyword">extends</span> <span class="token class-name">Mediator</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+      <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Colleague</span><span class="token punctuation">)</span><span class="token punctuation">(</span>colleagues<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">method1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 抽象同事类维持了对抽象中介者的引用</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Colleague</span> <span class="token punctuation">{</span>
+   <span class="token keyword">protected</span> <span class="token class-name">Mediator</span> mediator<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Colleague</span><span class="token punctuation">(</span><span class="token class-name">Mediator</span> mediator<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>mediator <span class="token operator">=</span> mediator<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">method1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">method2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// method2是依赖方法，即调用在中介者中定义的方法，依赖中介者完成相应行为。</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteColleague</span> <span class="token keyword">extends</span> <span class="token class-name">Colleague</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token class-name">ConcreteColleague</span><span class="token punctuation">(</span><span class="token class-name">Mediator</span> mediator<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">super</span><span class="token punctuation">(</span>mediator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">method1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">method2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      mediator<span class="token punctuation">.</span><span class="token function">operation1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><ul><li>优点： 1、降低了类的复杂度，将一对多转化成了一对一。 2、各个类之间的解耦。 3、符合迪米特原则。</li> <li>缺点：中介者会庞大，变得复杂难以维护。</li></ul> <h3 id="备忘录模式"><a href="#备忘录模式" class="header-anchor">#</a> 备忘录模式</h3> <ol><li><p>动机</p> <ul><li>在不破坏封装的情况下，捕获一个对象的内部状态，并在该对象之外保存这个状态，这样可以在以后将对象皆得到通知并被自动更新。</li></ul></li> <li><p>包含以下</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Originator(原发器)
+Memento(备忘录)
+Caretaker(负责人)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>核心代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Originator</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">String</span> state<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Originator</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+   <span class="token comment">// 创建一个备忘录对象</span>
+   <span class="token keyword">public</span> <span class="token class-name">Memento</span> <span class="token function">createMemento</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Memento</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">restoreMemento</span><span class="token punctuation">(</span><span class="token class-name">Memento</span> m<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      state <span class="token operator">=</span> m<span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setState</span><span class="token punctuation">(</span><span class="token class-name">String</span> state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 备忘录类，为原生类提供状态</span>
+<span class="token keyword">class</span> <span class="token class-name">Memento</span><span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token class-name">String</span> state<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Memento</span><span class="token punctuation">(</span><span class="token class-name">Originator</span> o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state <span class="token operator">=</span> o<span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setState</span><span class="token punctuation">(</span><span class="token class-name">String</span> state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 负责人类的作用仅仅用于存储备忘录对象。</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Caretaker</span><span class="token punctuation">{</span>
+   pricate <span class="token class-name">Memento</span> memento<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token class-name">Memento</span> <span class="token function">getMemento</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> memento<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setMemento</span><span class="token punctuation">(</span><span class="token class-name">Memento</span> m<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>m <span class="token operator">=</span> memento<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><ul><li>优点： 1、给用户提供了一种可以恢复状态的机制，可以使用户能够比较方便地回到某个历史的状态。 2、实现了信息的封装，使得用户不需要关心状态的保存细节。</li> <li>缺点：消耗资源。如果类的成员变量过多，势必会占用比较大的资源，而且每一次保存都会消耗一定的内存。</li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">10/17/2021, 8:21:50 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/category1/sheji/danli.html#设计原则" class="sidebar-link reco-side-设计原则" data-v-70334359>设计原则</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sheji/danli.html#创建型模式" class="sidebar-link reco-side-创建型模式" data-v-70334359>创建型模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#单例模式" class="sidebar-link reco-side-单例模式" data-v-70334359>单例模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#工厂模式" class="sidebar-link reco-side-工厂模式" data-v-70334359>工厂模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#原型模式" class="sidebar-link reco-side-原型模式" data-v-70334359>原型模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#建造者模式" class="sidebar-link reco-side-建造者模式" data-v-70334359>建造者模式</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sheji/danli.html#结构型模式" class="sidebar-link reco-side-结构型模式" data-v-70334359>结构型模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#适配器模式" class="sidebar-link reco-side-适配器模式" data-v-70334359>适配器模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#桥接模式" class="sidebar-link reco-side-桥接模式" data-v-70334359>桥接模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#组合模式" class="sidebar-link reco-side-组合模式" data-v-70334359>组合模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#装饰模式" class="sidebar-link reco-side-装饰模式" data-v-70334359>装饰模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#外观模式" class="sidebar-link reco-side-外观模式" data-v-70334359>外观模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#享元模式" class="sidebar-link reco-side-享元模式" data-v-70334359>享元模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#代理模式" class="sidebar-link reco-side-代理模式" data-v-70334359>代理模式</a></li><li class="level-2" data-v-70334359><a href="/blogs/category1/sheji/danli.html#行为型模式" class="sidebar-link reco-side-行为型模式" data-v-70334359>行为型模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#观察者模式" class="sidebar-link reco-side-观察者模式" data-v-70334359>观察者模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#状态模式" class="sidebar-link reco-side-状态模式" data-v-70334359>状态模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#策略模式" class="sidebar-link reco-side-策略模式" data-v-70334359>策略模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#解释器模式" class="sidebar-link reco-side-解释器模式" data-v-70334359>解释器模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#模板方法模式" class="sidebar-link reco-side-模板方法模式" data-v-70334359>模板方法模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#职责链模式" class="sidebar-link reco-side-职责链模式" data-v-70334359>职责链模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#命令模式" class="sidebar-link reco-side-命令模式" data-v-70334359>命令模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#迭代器模式" class="sidebar-link reco-side-迭代器模式" data-v-70334359>迭代器模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#中介者模式" class="sidebar-link reco-side-中介者模式" data-v-70334359>中介者模式</a></li><li class="level-3" data-v-70334359><a href="/blogs/category1/sheji/danli.html#备忘录模式" class="sidebar-link reco-side-备忘录模式" data-v-70334359>备忘录模式</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div class="RibbonAnimation"></div><div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div><!----></div></div>
+    <script src="/assets/js/app.617e32b2.js" defer></script><script src="/assets/js/3.f97a72c8.js" defer></script><script src="/assets/js/1.23c60b83.js" defer></script><script src="/assets/js/52.3eaaef6c.js" defer></script>
+  </body>
+</html>
